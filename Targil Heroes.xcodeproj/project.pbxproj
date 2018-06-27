@@ -12,6 +12,14 @@
 		D772C2E520E21CBB0099B2C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D772C2E320E21CBB0099B2C0 /* Main.storyboard */; };
 		D772C2E720E21CBC0099B2C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D772C2E620E21CBC0099B2C0 /* Assets.xcassets */; };
 		D772C2EA20E21CBC0099B2C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D772C2E820E21CBC0099B2C0 /* LaunchScreen.storyboard */; };
+		D772C30120E2399F0099B2C0 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C30020E2399F0099B2C0 /* ItemManager.swift */; };
+		D772C30320E23B470099B2C0 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C30220E23B470099B2C0 /* Actor.swift */; };
+		D772C30520E23B8E0099B2C0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C30420E23B8E0099B2C0 /* Movie.swift */; };
+		D772C31120E253760099B2C0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C31020E253760099B2C0 /* Item.swift */; };
+		D772C31820E259960099B2C0 /* UIImageX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C31720E259960099B2C0 /* UIImageX.swift */; };
+		D772C31A20E25BF00099B2C0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C31920E25BF00099B2C0 /* Extension.swift */; };
+		D772C31D20E25FF50099B2C0 /* PictureZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C31C20E25FF50099B2C0 /* PictureZoomController.swift */; };
+		D78422C720E2C75200004504 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78422C620E2C75200004504 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		D772C2E620E21CBC0099B2C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D772C2E920E21CBC0099B2C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D772C2EB20E21CBC0099B2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D772C30020E2399F0099B2C0 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		D772C30220E23B470099B2C0 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		D772C30420E23B8E0099B2C0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D772C31020E253760099B2C0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D772C31720E259960099B2C0 /* UIImageX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageX.swift; sourceTree = "<group>"; };
+		D772C31920E25BF00099B2C0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D772C31C20E25FF50099B2C0 /* PictureZoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureZoomController.swift; sourceTree = "<group>"; };
+		D78422C620E2C75200004504 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,87 @@
 		D772C2DE20E21CBB0099B2C0 /* Targil Heroes */ = {
 			isa = PBXGroup;
 			children = (
-				D772C2DF20E21CBB0099B2C0 /* AppDelegate.swift */,
-				D772C2E120E21CBB0099B2C0 /* ViewController.swift */,
-				D772C2E320E21CBB0099B2C0 /* Main.storyboard */,
-				D772C2E620E21CBC0099B2C0 /* Assets.xcassets */,
-				D772C2E820E21CBC0099B2C0 /* LaunchScreen.storyboard */,
+				D772C2F420E21CEA0099B2C0 /* Supporting files */,
+				D772C2F320E21CDB0099B2C0 /* Controller */,
+				D772C2F220E21CD00099B2C0 /* View */,
+				D772C2F120E21CC40099B2C0 /* Model */,
 				D772C2EB20E21CBC0099B2C0 /* Info.plist */,
 			);
 			path = "Targil Heroes";
+			sourceTree = "<group>";
+		};
+		D772C2F120E21CC40099B2C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D772C31220E253970099B2C0 /* Item */,
+				D772C30220E23B470099B2C0 /* Actor.swift */,
+				D772C30420E23B8E0099B2C0 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D772C2F220E21CD00099B2C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D772C31620E259840099B2C0 /* Image */,
+				D772C2E320E21CBB0099B2C0 /* Main.storyboard */,
+				D772C2E820E21CBC0099B2C0 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D772C2F320E21CDB0099B2C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D772C31B20E25FD00099B2C0 /* PictureZoomController */,
+				D772C2F520E21D050099B2C0 /* ViewControlller */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D772C2F420E21CEA0099B2C0 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D772C2E620E21CBC0099B2C0 /* Assets.xcassets */,
+				D772C2DF20E21CBB0099B2C0 /* AppDelegate.swift */,
+				D772C31920E25BF00099B2C0 /* Extension.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		D772C2F520E21D050099B2C0 /* ViewControlller */ = {
+			isa = PBXGroup;
+			children = (
+				D772C2E120E21CBB0099B2C0 /* ViewController.swift */,
+				D78422C620E2C75200004504 /* TableViewCell.swift */,
+			);
+			path = ViewControlller;
+			sourceTree = "<group>";
+		};
+		D772C31220E253970099B2C0 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				D772C31020E253760099B2C0 /* Item.swift */,
+				D772C30020E2399F0099B2C0 /* ItemManager.swift */,
+			);
+			name = Item;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D772C31620E259840099B2C0 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D772C31720E259960099B2C0 /* UIImageX.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		D772C31B20E25FD00099B2C0 /* PictureZoomController */ = {
+			isa = PBXGroup;
+			children = (
+				D772C31C20E25FF50099B2C0 /* PictureZoomController.swift */,
+			);
+			path = PictureZoomController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +224,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D772C31820E259960099B2C0 /* UIImageX.swift in Sources */,
 				D772C2E220E21CBB0099B2C0 /* ViewController.swift in Sources */,
+				D772C30120E2399F0099B2C0 /* ItemManager.swift in Sources */,
 				D772C2E020E21CBB0099B2C0 /* AppDelegate.swift in Sources */,
+				D772C31D20E25FF50099B2C0 /* PictureZoomController.swift in Sources */,
+				D78422C720E2C75200004504 /* TableViewCell.swift in Sources */,
+				D772C31120E253760099B2C0 /* Item.swift in Sources */,
+				D772C30320E23B470099B2C0 /* Actor.swift in Sources */,
+				D772C30520E23B8E0099B2C0 /* Movie.swift in Sources */,
+				D772C31A20E25BF00099B2C0 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
