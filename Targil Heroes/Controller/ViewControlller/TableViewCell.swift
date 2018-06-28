@@ -23,14 +23,12 @@ class TableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     
     
     func view(with movie: Movie){
         self.movie = movie
-        
         yearLabel.text = String(movie.year)
         titleLabel.text = movie.name
         

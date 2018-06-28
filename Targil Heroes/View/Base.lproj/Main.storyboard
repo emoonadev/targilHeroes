@@ -188,7 +188,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qDQ-Es-DIE">
-                                <rect key="frame" x="0.0" y="358" width="375" height="454"/>
+                                <rect key="frame" x="0.0" y="398" width="375" height="414"/>
                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="zpu-4h-Jwi" customClass="TableViewCell" customModule="Targil_Heroes" customModuleProvider="target">
@@ -242,19 +242,39 @@
                                     <navigationItem title="Name" id="Wrx-Bt-aNp"/>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIx-dW-wkE">
+                                <rect key="frame" x="0.0" y="358" width="375" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8X-j9-Diq">
+                                        <rect key="frame" x="130.66666666666666" y="10" width="114" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="APA-c1-IOG"/>
+                                    <constraint firstItem="A8X-j9-Diq" firstAttribute="centerX" secondItem="MIx-dW-wkE" secondAttribute="centerX" id="swM-Bc-YOZ"/>
+                                    <constraint firstItem="A8X-j9-Diq" firstAttribute="centerY" secondItem="MIx-dW-wkE" secondAttribute="centerY" id="tRv-mT-Z0k"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aXl-XC-xwD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3aM-Vg-0JJ"/>
-                            <constraint firstItem="qDQ-Es-DIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9p7-bQ-nBf"/>
+                            <constraint firstItem="MIx-dW-wkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Xv-30-dFI"/>
                             <constraint firstItem="hs5-K9-W8h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9tv-JB-Ba9"/>
-                            <constraint firstAttribute="bottom" secondItem="qDQ-Es-DIE" secondAttribute="bottom" id="HTB-dB-Zuc"/>
+                            <constraint firstItem="MIx-dW-wkE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J01-Pb-A2x"/>
+                            <constraint firstItem="MIx-dW-wkE" firstAttribute="top" secondItem="hs5-K9-W8h" secondAttribute="bottom" id="Sjc-G3-O9J"/>
                             <constraint firstItem="aXl-XC-xwD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SnD-OA-YYu"/>
+                            <constraint firstAttribute="bottom" secondItem="qDQ-Es-DIE" secondAttribute="bottom" id="UkB-JN-Hot"/>
                             <constraint firstItem="aXl-XC-xwD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zxr-3x-QW5"/>
                             <constraint firstItem="hs5-K9-W8h" firstAttribute="top" secondItem="aXl-XC-xwD" secondAttribute="bottom" id="aMG-Xd-hV1"/>
-                            <constraint firstItem="qDQ-Es-DIE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mHw-ga-4gv"/>
-                            <constraint firstItem="qDQ-Es-DIE" firstAttribute="top" secondItem="hs5-K9-W8h" secondAttribute="bottom" id="maz-mq-Sxm"/>
+                            <constraint firstItem="qDQ-Es-DIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ace-ed-QjP"/>
+                            <constraint firstItem="qDQ-Es-DIE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nru-gB-cjD"/>
                             <constraint firstItem="hs5-K9-W8h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uOs-Fh-LBX"/>
+                            <constraint firstItem="qDQ-Es-DIE" firstAttribute="top" secondItem="MIx-dW-wkE" secondAttribute="bottom" id="yOm-eo-4YV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

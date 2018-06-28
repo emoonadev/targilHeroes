@@ -1,0 +1,6 @@
+framework module Pods_Targil_Heroes {
+  umbrella header "Pods-Targil Heroes-umbrella.h"
+
+  export *
+  module * { export * }
+}

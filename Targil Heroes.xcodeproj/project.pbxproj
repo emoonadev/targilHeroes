@@ -19,10 +19,14 @@
 		D772C31820E259960099B2C0 /* UIImageX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C31720E259960099B2C0 /* UIImageX.swift */; };
 		D772C31A20E25BF00099B2C0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C31920E25BF00099B2C0 /* Extension.swift */; };
 		D772C31D20E25FF50099B2C0 /* PictureZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772C31C20E25FF50099B2C0 /* PictureZoomController.swift */; };
+		D777C31A20E5108C0045CD14 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D777C31920E5108C0045CD14 /* Reachability.swift */; };
 		D78422C720E2C75200004504 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78422C620E2C75200004504 /* TableViewCell.swift */; };
+		E9E8E14C6839F62E5CC12A78 /* Pods_Targil_Heroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CB63D6574FB6C5D6E5DF69 /* Pods_Targil_Heroes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E156DBA72EF61B7F1A3283D /* Pods-Targil Heroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Targil Heroes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Targil Heroes/Pods-Targil Heroes.release.xcconfig"; sourceTree = "<group>"; };
+		81CB63D6574FB6C5D6E5DF69 /* Pods_Targil_Heroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Targil_Heroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D772C2DC20E21CBB0099B2C0 /* Targil Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Targil Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D772C2DF20E21CBB0099B2C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D772C2E120E21CBB0099B2C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +41,9 @@
 		D772C31720E259960099B2C0 /* UIImageX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageX.swift; sourceTree = "<group>"; };
 		D772C31920E25BF00099B2C0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		D772C31C20E25FF50099B2C0 /* PictureZoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureZoomController.swift; sourceTree = "<group>"; };
+		D777C31920E5108C0045CD14 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D78422C620E2C75200004504 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FAAB6C893910DCFD16E48A7C /* Pods-Targil Heroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Targil Heroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Targil Heroes/Pods-Targil Heroes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E8E14C6839F62E5CC12A78 /* Pods_Targil_Heroes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B466AC9A552815F1CDEBF76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB6C893910DCFD16E48A7C /* Pods-Targil Heroes.debug.xcconfig */,
+				7E156DBA72EF61B7F1A3283D /* Pods-Targil Heroes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5465DAA5AE2B9D472B7B3FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81CB63D6574FB6C5D6E5DF69 /* Pods_Targil_Heroes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D772C2D320E21CBB0099B2C0 = {
 			isa = PBXGroup;
 			children = (
 				D772C2DE20E21CBB0099B2C0 /* Targil Heroes */,
 				D772C2DD20E21CBB0099B2C0 /* Products */,
+				3B466AC9A552815F1CDEBF76 /* Pods */,
+				5465DAA5AE2B9D472B7B3FF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,10 +96,10 @@
 		D772C2DE20E21CBB0099B2C0 /* Targil Heroes */ = {
 			isa = PBXGroup;
 			children = (
-				D772C2F420E21CEA0099B2C0 /* Supporting files */,
-				D772C2F320E21CDB0099B2C0 /* Controller */,
-				D772C2F220E21CD00099B2C0 /* View */,
 				D772C2F120E21CC40099B2C0 /* Model */,
+				D772C2F220E21CD00099B2C0 /* View */,
+				D772C2F320E21CDB0099B2C0 /* Controller */,
+				D772C2F420E21CEA0099B2C0 /* Supporting files */,
 				D772C2EB20E21CBC0099B2C0 /* Info.plist */,
 			);
 			path = "Targil Heroes";
@@ -83,8 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				D772C31220E253970099B2C0 /* Item */,
-				D772C30220E23B470099B2C0 /* Actor.swift */,
-				D772C30420E23B8E0099B2C0 /* Movie.swift */,
+				D777C31C20E513DA0045CD14 /* Movie */,
+				D777C31B20E513D00045CD14 /* Actor */,
+				D772C31920E25BF00099B2C0 /* Extension.swift */,
+				D777C31920E5108C0045CD14 /* Reachability.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,7 +141,6 @@
 			children = (
 				D772C2E620E21CBC0099B2C0 /* Assets.xcassets */,
 				D772C2DF20E21CBB0099B2C0 /* AppDelegate.swift */,
-				D772C31920E25BF00099B2C0 /* Extension.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -153,6 +180,22 @@
 			path = PictureZoomController;
 			sourceTree = "<group>";
 		};
+		D777C31B20E513D00045CD14 /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				D772C30220E23B470099B2C0 /* Actor.swift */,
+			);
+			path = Actor;
+			sourceTree = "<group>";
+		};
+		D777C31C20E513DA0045CD14 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				D772C30420E23B8E0099B2C0 /* Movie.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D772C2EE20E21CBC0099B2C0 /* Build configuration list for PBXNativeTarget "Targil Heroes" */;
 			buildPhases = (
+				4BA4F926DBA0EC7AE2E430C0 /* [CP] Check Pods Manifest.lock */,
 				D772C2D820E21CBB0099B2C0 /* Sources */,
 				D772C2D920E21CBB0099B2C0 /* Frameworks */,
 				D772C2DA20E21CBB0099B2C0 /* Resources */,
+				66E28B1F36FAACE45C65E493 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +264,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BA4F926DBA0EC7AE2E430C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Targil Heroes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66E28B1F36FAACE45C65E493 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Targil Heroes/Pods-Targil Heroes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Targil Heroes/Pods-Targil Heroes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D772C2D820E21CBB0099B2C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -231,6 +317,7 @@
 				D772C31D20E25FF50099B2C0 /* PictureZoomController.swift in Sources */,
 				D78422C720E2C75200004504 /* TableViewCell.swift in Sources */,
 				D772C31120E253760099B2C0 /* Item.swift in Sources */,
+				D777C31A20E5108C0045CD14 /* Reachability.swift in Sources */,
 				D772C30320E23B470099B2C0 /* Actor.swift in Sources */,
 				D772C30520E23B8E0099B2C0 /* Movie.swift in Sources */,
 				D772C31A20E25BF00099B2C0 /* Extension.swift in Sources */,
@@ -375,6 +462,7 @@
 		};
 		D772C2EF20E21CBC0099B2C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAAB6C893910DCFD16E48A7C /* Pods-Targil Heroes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +480,7 @@
 		};
 		D772C2F020E21CBC0099B2C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E156DBA72EF61B7F1A3283D /* Pods-Targil Heroes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
